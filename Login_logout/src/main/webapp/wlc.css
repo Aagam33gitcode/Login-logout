@@ -1,0 +1,115 @@
+/* Reset and basic styling */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom, #6a11cb, #2575fc);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px 60px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.welcome-section h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    animation: slideIn 1s ease-out;
+}
+
+.welcome-section p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: #d1d1d1;
+    animation: slideIn 1s ease-out 0.2s;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn {
+    padding: 15px 30px;
+    font-size: 1em;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.login-btn {
+    background-color: #00c9a7;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 201, 167, 0.3);
+      text-decoration: none;
+}
+
+.login-btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 201, 167, 0.5);
+}
+
+.logout-btn {
+    background-color: #fc6767;
+    color: white;
+    box-shadow: 0 4px 10px rgba(252, 103, 103, 0.3);
+      text-decoration: none;
+}
+
+.logout-btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(252, 103, 103, 0.5);
+}
+
+/* Keyframe animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.wlc-logout{
+	padding: 15px 30px;
+    font-size: 1em;
+    font-weight: bold;
+
+    display:flex;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+       
+    color: black;
+      text-decoration: none;
+}
